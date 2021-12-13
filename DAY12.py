@@ -28,8 +28,7 @@ def pursueEnd_part2(map, current, smallsVisited, nPaths, currentPath):
         if n == "start":
             continue
         elif n == "end":
-            if paths[1] in map["start"]:
-                nPaths.add(tuple(paths + ["end"]))
+            nPaths.add(tuple(paths + ["end"]))
             continue
         if n.islower():
             if n in smalls.keys():
